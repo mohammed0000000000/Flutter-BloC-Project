@@ -28,7 +28,9 @@ class Character {
     required this.url,
     required this.created,
   });
-
+  //The `factory` ==>  keyword is used to create constructors in Dart
+  //    that can return instances of the class from different sources,
+  //    not just by directly instantiating the class
   factory Character.fromJson(Map<String, dynamic> json) {
     return Character(
       id: json['id'],
